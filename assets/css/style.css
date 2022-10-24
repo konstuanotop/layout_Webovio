@@ -185,6 +185,12 @@ body {
     line-height: 1.1;
     text-decoration-line: underline;
     color: #D4D6D4;
+
+    transition: all 0.3s ease 0s;
+}
+
+.body-block__link:hover {
+    color: rgb(185, 183, 183);
 }
 
 .body-block__link::before {
@@ -200,6 +206,10 @@ body {
 
 .body-block__link-yellow {
     color: #ffd723;
+}
+
+.body-block__link-yellow:hover {
+    color: #fff;
 }
 
 .body-block__link-yellow::before {
@@ -359,4 +369,57 @@ body {
     font-weight: 400;
     font-size: 24px;
     line-height: 1.7;
+}
+
+.projects__body {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 122px;
+
+    max-width: 100%;
+}
+
+.projects__title {
+    margin-right: 133px;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 325px;
+
+    line-height: 1.5;
+}
+
+.projects__text {
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 518px;
+}
+
+.project {
+    overflow: hidden;
+}
+
+.project__image img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.project__content {
+    flex: 0 0 100%;
+}
+
+.project__body {
+    width: 50%;
+}
+
+@media (min-width: 767px) {
+    .project {
+        display: flex;
+    }
+
+    .project__image {
+        flex: 0 0 50%;
+        transform: translate(-100%, 0);
+    }
 }
