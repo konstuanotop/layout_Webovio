@@ -371,6 +371,11 @@ body {
     line-height: 1.7;
 }
 
+.projects__container {
+    border-top: 1px solid rgba(33, 56, 66, 0.0955529);
+    padding-top: 150px;
+}
+
 .projects__body {
     flex-direction: row;
     justify-content: start;
@@ -407,8 +412,8 @@ body {
 }
 
 .project:last-child {
-    padding-bottom: 130px;
-    margin-bottom: 50px;
+    padding-bottom: 180px;
+    border-bottom: 1px solid rgba(33, 56, 66, 0.0955529);
 }
 
 .project__image img {
@@ -452,11 +457,15 @@ body {
 
 .project__review {
     position: absolute;
-    bottom: -30px;
-    left: -30px;
+    
 
     background-color: #fff;
     max-width: 453px;    
+}
+
+.project-right .project__review {
+    bottom: -30px;
+    left: -30px;
 }
 
 .project-left .project__content {
@@ -473,9 +482,67 @@ body {
 }
 
 .project-left .project__review {
-
+    bottom: -30px;
+    right: -30px;
 }
 
+
+.deation {
+    margin-top: 150px;
+    margin-bottom: 322px;
+}
+
+.deation__body {
+    margin-bottom: 60px;
+}
+
+.deation__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deation__column {
+    padding: 0 20px;
+    margin-bottom: 30px;
+    flex: 0 1 25%;
+}
+
+.column__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+}
+
+.column__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.together {
+    margin-top: -114px;
+    margin-right: 165px;
+    padding: 50px 0 44px 0;
+    background-color: #b3b1b1;;
+
+    position: relative;
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.together__body {
+    max-width: 822px;
+}
+
+.together__title {
+    margin-bottom: 50px;
+    font-size: 60px;
+    line-height: 1.2;
+}
 
 
 @media (min-width: 767px) {
